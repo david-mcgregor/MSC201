@@ -21,42 +21,7 @@
 	}
 </STYLE>
 
-<!--
-		Check for screen size and redirect if necessary
---!>
-<script type="text/javascript">
-//
-//	If we're being invoked from the mobile version, we'll skip the mobile
-// 	screen-size test. Usage is index.hml?anything-here
-//
-	var ri = window.location.toString().indexOf('?');
-	if( ri < 0 )
-	{
-		if( detectMobile() ) {
-			window.location="http://www.makenasurfc201.com/mobile.html";
-		}
-	}
-//
-// Is the page being viewed on a small - 800x600 or less - device/window?
-//
-function detectMobile() {
-	var w = window.innerWidth || 
-		   document.documentElement.clientWidth ||	document.clientWidth;
 
-	var h = window.innerHeight || 
-		   document.documentElement.clientHeight ||	document.clientHeight;
-
-	var retVal = false;
-	if( w <= 800 && h <= 600)
-	{
-		retVal = true;
-	}
-
-	return retVal;
-	
-}
-
-</script>
 
 </HEAD>
 
